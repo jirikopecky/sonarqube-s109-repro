@@ -14,6 +14,6 @@ var logger = sp.GetRequiredService<ILogger<Program>>();
 
 logger.ProgramStarting();
 
-await Task.Delay(100); // simulate work
+await Task.Delay(TimeSpan.FromSeconds(1)); // simulate work
 
 logger.ProgramStopping();
